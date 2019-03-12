@@ -5,8 +5,7 @@ Watch README
 
 ## Log in:
 ### `sign-up`
-`
-POST: { login: 'student', password : '123' }
+`POST: { login: 'student', password : '123' }
 RESPONSE: {
     "success": true,
     "user": {
@@ -20,6 +19,4 @@ RESPONSE: {
         "updated_at": "2019-03-12 18:01:47"
     },
     "token": "ijEZSaaoZo9o0XE1HjrRhQlseAPePf6m0G3"
-}
-
-`
+}`
