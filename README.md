@@ -5,8 +5,8 @@ Watch README
 
 ## Log in:
 ### `sign-up`
-`POST: { login: 'student', password : '123' }
-RESPONSE: {
+`POST: { login: 'student', password : '123' }`
+`RESPONSE: {
     "success": true,
     "user": {
         "id": 2,
