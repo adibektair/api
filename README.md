@@ -63,23 +63,48 @@ Watch README
 
 
 ## Получить список чатов:
-### `get-news`
+### `get-chats`
 `POST: {token: your token}`
-`RESPONSE: [
-    {
-        "id": 1,
-        "isGroup": 1,
-        "group_name": "IS 182 M",
-        "updated_at": "2019-03-13 00:00:00",
-        "last_message": "",
-        "username": " "
-    },
-    {
-        "id": 2,
-        "isGroup": 0,
-        "group_name": null,
-        "updated_at": "2019-03-14 00:00:00",
-        "last_message": "Hello",
-        "username": "Guldana Shyntore"
-    }
-]`
+`RESPONSE: {
+    "chats": [
+        {
+            "id": 1,
+            "isGroup": 1,
+            "group_name": "IS 182 M",
+            "group_id": 1,
+            "updated_at": "2019-03-13 00:00:00",
+            "last_message": "",
+            "user_id": null,
+            "username": " "
+        },
+        {
+            "id": 2,
+            "isGroup": 0,
+            "group_name": null,
+            "group_id": null,
+            "updated_at": "2019-03-13 11:45:28",
+            "last_message": "Hi Isma!",
+            "user_id": 2,
+            "username": "Isma Student"
+        }
+    ],
+    "state": "success"
+}`
+
+
+
+
+## Написать сообщение:
+### `send-message`
+`POST: {
+token: your token,
+group_id: БЕРЕШЬ ИЗ ЗАПРОСА ВЫШЕ если это не групповой чат, не отправляй этот параметр
+text: текст сообщения
+reciever_id: ID получателя, если это не групповой чат БЕРЕШЬ ИЗ ЗАПРОСА ВЫШЕ
+
+}`
+`RESPONSE: {
+    "state": "success"
+}`
+
+
