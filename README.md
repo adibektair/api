@@ -111,7 +111,7 @@ reciever_id: ID получателя, если это не групповой ч
 
 
 ## Вывести сообщения конкретного чата:
-### `send-message`
+### `get-chat-messages`
 `POST: {
 token: your token,
 chat_id: БЕРЕШЬ ИЗ ЗАПРОСА get-chats }`
