@@ -98,7 +98,7 @@ Watch README
 ### `send-message`
 `POST: {
 token: your token,
-group_id: БЕРЕШЬ ИЗ ЗАПРОСА ВЫШЕ если это не групповой чат, не отправляй этот параметр
+group_id: БЕРЕШЬ ИЗ ЗАПРОСА get-chats если это не групповой чат, не отправляй этот параметр
 text: текст сообщения
 reciever_id: ID получателя, если это не групповой чат БЕРЕШЬ ИЗ ЗАПРОСА ВЫШЕ
 
@@ -108,3 +108,36 @@ reciever_id: ID получателя, если это не групповой ч
 }`
 
 
+
+
+## Вывести сообщения конкретного чата:
+### `send-message`
+`POST: {
+token: your token,
+chat_id: БЕРЕШЬ ИЗ ЗАПРОСА get-chats }`
+
+`RESPONSE: {
+    "state": "success",
+    "messages": [
+        {
+            "id": 4,
+            "author_id": 2,
+            "text": "Hello Guldana!",
+            "group_id": null,
+            "file_path": null,
+            "created_at": "2019-03-13 11:44:13",
+            "updated_at": "2019-03-13 11:44:13",
+            "reciever_id": 3
+        },
+        {
+            "id": 5,
+            "author_id": 3,
+            "text": "Hi Isma!",
+            "group_id": null,
+            "file_path": null,
+            "created_at": "2019-03-13 11:45:28",
+            "updated_at": "2019-03-13 11:45:28",
+            "reciever_id": 2
+        }
+    ]
+}`
