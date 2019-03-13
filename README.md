@@ -60,3 +60,26 @@ Watch README
         }
     ]
 }`
+
+
+## Получить список чатов:
+### `get-news`
+`POST: {token: your token}`
+`RESPONSE: [
+    {
+        "id": 1,
+        "isGroup": 1,
+        "group_name": "IS 182 M",
+        "updated_at": "2019-03-13 00:00:00",
+        "last_message": "",
+        "username": " "
+    },
+    {
+        "id": 2,
+        "isGroup": 0,
+        "group_name": null,
+        "updated_at": "2019-03-14 00:00:00",
+        "last_message": "Hello",
+        "username": "Guldana Shyntore"
+    }
+]`
