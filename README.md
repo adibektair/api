@@ -114,7 +114,10 @@ reciever_id: ID получателя, если это не групповой ч
 ### `get-chat-messages`
 `POST: {
 token: your token,
-chat_id: БЕРЕШЬ ИЗ ЗАПРОСА get-chats }`
+chat_id: БЕРЕШЬ ИЗ ЗАПРОСА get-chats 
+ЕСЛИ ТЫ ИЩЕШЬ ЧЕЛОВЕКА В ПОИСКЕ, СООТВЕТСВЕННО ЧАТА МОЖЕТ И НЕ БЫТЬ С НИМ, ПОЭТОМУ ТЫ ДОЛЖЕН ОТПРАВИТЬ НЕ chat_id, А 
+reciever_id - который берешь с поиска
+}`
 
 `RESPONSE: {
     "state": "success",
