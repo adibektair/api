@@ -100,7 +100,7 @@ Watch README
 token: your token,
 group_id: БЕРЕШЬ ИЗ ЗАПРОСА get-chats если это не групповой чат, не отправляй этот параметр
 text: текст сообщения
-reciever_id: ID получателя, если это не групповой чат БЕРЕШЬ ИЗ ЗАПРОСА ВЫШЕ
+reciever_id: ID получателя, если это не групповой чат можно взять в запросах getChats или Search
 
 }`
 `RESPONSE: {
@@ -141,3 +141,30 @@ chat_id: БЕРЕШЬ ИЗ ЗАПРОСА get-chats }`
         }
     ]
 }`
+
+
+
+## Поиск людей:
+### `search`
+`POST: {
+token: your token,
+field: текст поиска
+}`
+
+`RESPONSE: {
+    "users": [
+        {
+            "id": 3,
+            "first_name": "Guldana",
+            "login": "guldanash",
+            "last_name": "Shyntore",
+            "role_id": 3,
+            "group_id": 1,
+            "created_at": null,
+            "updated_at": null,
+            "department_id": null
+        }
+    ],
+    "state": "success"
+}`
+
