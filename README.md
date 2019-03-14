@@ -101,7 +101,7 @@ token: your token,
 group_id: БЕРЕШЬ ИЗ ЗАПРОСА get-chats если это не групповой чат, не отправляй этот параметр
 text: текст сообщения
 reciever_id: ID получателя, если это не групповой чат можно взять в запросах getChats или Search
-
+file: FILE
 }`
 `RESPONSE: {
     "state": "success"
