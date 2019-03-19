@@ -171,3 +171,16 @@ field: текст поиска
     "state": "success"
 }`
 
+
+
+## Загрузка аватарки:
+### `update-avatar`
+`POST: {
+token: your token,
+avatar: formdata image
+}`
+
+`RESPONSE: {
+    "image_path" : ""
+    "state": "success"
+}`
