@@ -184,3 +184,16 @@ avatar: formdata image
     "image_path" : ""
     "state": "success"
 }`
+
+## Set push id:
+### `set-pushid`
+`POST: {
+token: your token,
+push_id: string
+}`
+
+`RESPONSE: {
+    "state": "success"
+}`
+
+
