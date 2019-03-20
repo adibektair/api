@@ -197,3 +197,26 @@ push_id: string
 }`
 
 
+
+## Изменить пароль:
+### `change-password`
+`POST: {
+token: your token,
+password: текущий пароль
+new_password: новый пароль
+}`
+
+`RESPONSE: {
+    "state": "success"
+}`
+
+## Set push id:
+### `set-pushid`
+`POST: {
+token: your token,
+push_id: string
+}`
+
+`RESPONSE: {
+    "state": "success"
+}`
