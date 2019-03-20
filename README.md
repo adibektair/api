@@ -231,4 +231,4 @@ push_id: string
 если ничего, то всех учителей
 }`
 
-
+# GET request /get-departments
